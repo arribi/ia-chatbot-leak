@@ -1,7 +1,7 @@
+import os
 import openai
 
-# Configuración del modelo de IA
-OPENAI_API_KEY = "sk-0123456789abcdefghijT3BlbkFJ0123456789abcdefghij"
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 def preguntar_ia(prompt):
     print(f"Enviando consulta a OpenAI: {prompt}")
